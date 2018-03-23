@@ -7,12 +7,15 @@
 <body>
     <section class="issue">
         <div class="formula"> beregnet populasjons varians // s</div>
-        <form id="beregnet_populasjons_varians_//_s_form">
+        <form id="beregnet_populasjons_varians_//_s_form" onchange="updateXForm(5, beregnet_populasjons_varians_x_verdier)">
             <input type="text" placeholder="sett inn antall forsøk // n"/>
             <input type="text" placeholder="sett inn gjennomsnitt av x"/>
             <input type="text" placeholder="sett inn den første x verdien"/>
-            <button>add new x value</button>
+            <div id="beregnet_populasjons_varians_x_verdier">
+
+            </div>
         </form>
+        <button id="beregnet_populasjons_varians_//_s_form_button" onclick="kalkulerBeregnetPopulajsonVarians()"></button>
     </section>
 <script src="script.js"></script>
 </body>
